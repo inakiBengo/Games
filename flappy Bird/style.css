@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #131313;
+    overflow-y: hidden;
+}
+
+
+.root{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+}
+
+.sky{
+    background-image: url(assets/fondo.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 90vh;
+}
+
+.bird{
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.ground{
+    background-image: url(assets/suelo.png);
+    background-size: 5%;
+    width: 100%;
+    height: 10vh;
+    z-index: 55;
+    position: absolute;
+}
+
+.obstacle{
+    position: absolute;
+    width: 80px;
+    height: 500px;
+}
+
+.topObstacle{
+    rotate: 180deg;
+    position: absolute;
+    width: 80px;
+    height: 500px;
+}
+
+.gameOverCard{
+    background-color: #907750;
+    width: 50%;
+    height: 50%;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    margin-left: 25%;
+    border-radius: 10px;
+    visibility: hidden;
+}
+

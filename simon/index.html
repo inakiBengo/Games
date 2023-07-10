@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <audio id="clip0">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+    </audio>
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+    </audio>
+    <audio id="audioLose">
+        <source src="assets/lose.mp3">
+    </audio>
+</head>
+<body>
+    <button id="btn" class="btn">START</button>
+    <div class="container" id="container">
+        <div id="top" class="blue"></div>
+        <div id="right" class="green"></div>
+        <div id="left" class="yellow"></div>
+        <div id="bottom" class="red"></div>
+    </div>
+    <section id="loser" class="section hidden">
+        <div>
+            <button id="delete" class="delete">x</button>
+            <h2 id="loserText">Loser</h2>
+            <img id="loserImg" class="video" src="assets/tenor.gif"></img>
+        </div>
+    </section>
+</body>
+<script src="js/index.js"></script>
+</html> 
